@@ -1,52 +1,100 @@
 <div *ngIf="foodItem">
 
 	<h2>{{foodItem.name | uppercase}} Details</h2>
-	<div>
-		<span>id: </span>{{foodItem.id}}
-	</div>
-	<div>
-		<label for="foodItem-name">Name: </label> <input id="foodItem-name"
-			[(ngModel)]="foodItem.name" placeholder="name">
-	</div>
-	<div>
-		<label for="foodItem-units">Units: </label> <input id="foodItem-units"
-			[(ngModel)]="foodItem.units" placeholder="units">
-	</div>
-	<div>
-		<label for="foodItem-energy">Energy: </label> <input
-			id="foodItem-energy" [(ngModel)]="foodItem.energy"
-			placeholder="energy">
-	</div>
-	<div>
-		<label for="foodItem-protein">Protein: </label> <input
-			id="foodItem-protein" [(ngModel)]="foodItem.protein"
-			placeholder="protein">
-	</div>
-	<div>
-		<label for="foodItem-carbs">Carbs: </label> <input id="foodItem-carbs"
-			[(ngModel)]="foodItem.carbs" placeholder="carbs">
-	</div>
-	<div>
-		<label for="foodItem-sugars">Sugars: </label> <input
-			id="foodItem-sugars" [(ngModel)]="foodItem.sugars"
-			placeholder="sugars">
-	</div>
-	<div>
-		<label for="foodItem-fats">Fats: </label> <input id="foodItem-fats"
-			[(ngModel)]="foodItem.fats" placeholder="fats">
-	</div>
-	<div>
-		<label for="foodItem-saturates">Saturates: </label> <input
-			id="foodItem-saturates" [(ngModel)]="foodItem.saturates"
-			placeholder="saturates">
-	</div>
-	<div>
-		<label for="foodItem-sodium">Sodium: </label> <input
-			id="foodItem-sodium" [(ngModel)]="foodItem.sodium"
-			placeholder="sodium">
-	</div>
-	<div>
-		<label for="foodItem-fibre">Fibre: </label> <input id="foodItem-fibre"
-			[(ngModel)]="foodItem.fibre" placeholder="fibre">
+	<div class="fooditem-detail-table">
+		<div class="foiditem-detail-row">
+			<div class="fooditem-detail-cell">id:</div>
+			<div class="fooditem-detail-cell2">{{foodItem.id}}</div>
+		</div>
+		<div class="foiditem-detail-row">
+			<div class="fooditem-detail-cell">
+				<label for="foodItem-name">Name: </label>
+			</div>
+			<div class="fooditem-detail-cell">
+				<input id="foodItem-name" [(ngModel)]="foodItem.name"
+					placeholder="name">
+			</div>
+		</div>
+		<div class="foiditem-detail-row">
+			<div class="fooditem-detail-cell">
+				<label for="foodItem-units">Units: </label>
+			</div>
+			<div class="fooditem-detail-cell">
+				<input id="foodItem-units" [(ngModel)]="foodItem.units"
+					placeholder="units">
+			</div>
+		</div>
+		<div class="foiditem-detail-row">
+			<div class="fooditem-detail-cell">
+				<label for="foodItem-energy">Energy: </label>
+			</div>
+			<div class="fooditem-detail-cell">
+				<input id="foodItem-energy" [(ngModel)]="foodItem.energy"
+					placeholder="energy">
+			</div>
+		</div>
+		<div class="foiditem-detail-row">
+			<div class="fooditem-detail-cell">
+				<label for="foodItem-protein">Protein: </label>
+			</div>
+			<div class="fooditem-detail-cell">
+				<input id="foodItem-protein" [(ngModel)]="foodItem.protein"
+					placeholder="protein">
+			</div>
+		</div>
+		<div class="foiditem-detail-row">
+			<div class="fooditem-detail-cell">
+				<label for="foodItem-carbs">Carbs: </label>
+			</div>
+			<div class="fooditem-detail-cell">
+				<input id="foodItem-carbs" [(ngModel)]="foodItem.carbs"
+					placeholder="carbs">
+			</div>
+		</div>
+		<div class="foiditem-detail-row">
+			<div class="fooditem-detail-cell">
+				<label for="foodItem-sugars">Sugars: </label>
+			</div>
+			<div class="fooditem-detail-cell">
+				<input id="foodItem-sugars" [(ngModel)]="foodItem.sugars"
+					placeholder="sugars">
+			</div>
+		</div>
+		<div class="foiditem-detail-row">
+			<div class="fooditem-detail-cell">
+				<label for="foodItem-fats">Fats: </label>
+			</div>
+			<div class="fooditem-detail-cell">
+				<input id="foodItem-fats" [(ngModel)]="foodItem.fats"
+					placeholder="fats">
+			</div>
+		</div>
+		<div class="foiditem-detail-row">
+			<div class="fooditem-detail-cell">
+				<label for="foodItem-saturates">Saturates: </label>
+			</div>
+			<div class="fooditem-detail-cell">
+				<input id="foodItem-saturates" [(ngModel)]="foodItem.saturates"
+					placeholder="saturates">
+			</div>
+		</div>
+		<div class="foiditem-detail-row">
+			<div class="fooditem-detail-cell">
+				<label for="foodItem-sodium">Sodium: </label>
+			</div>
+			<div class="fooditem-detail-cell">
+				<input id="foodItem-sodium" [(ngModel)]="foodItem.sodium"
+					placeholder="sodium">
+			</div>
+		</div>
+		<div class="foiditem-detail-row">
+			<div class="fooditem-detail-cell">
+				<label for="foodItem-fibre">Fibre: </label>
+			</div>
+			<div class="fooditem-detail-cell">
+				<input id="foodItem-fibre" [(ngModel)]="foodItem.fibre"
+					placeholder="fibre">
+			</div>
+		</div>
 	</div>
 </div>
