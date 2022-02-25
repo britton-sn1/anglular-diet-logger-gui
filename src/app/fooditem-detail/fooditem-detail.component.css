@@ -1,0 +1,27 @@
+.fooditem-detail-table {
+  display: table;         
+  width: 240px;         
+  background-color: #eee;         
+  border: 1px solid #666666;         
+  border-spacing: 5px; 
+}
+
+.fooditem-detail-row {
+  display: table-row;
+  width: 880px;
+  clear: both;
+}
+
+.fooditem-detail-cell {
+  float: left; /* fix for  buggy browsers */
+  display: table-column;         
+  width: 80px;         
+  background-color: #ccc;  
+}
+
+.fooditem-detail-cell2 {
+  float: left; /* fix for  buggy browsers */
+  display: table-column;         
+  width: 80px;         
+    
+}
