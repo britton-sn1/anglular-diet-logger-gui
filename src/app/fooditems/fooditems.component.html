@@ -1,0 +1,32 @@
+<H2>Food Items</H2>
+<div class="fooditem-table">
+	<div class="fooditem-row">
+		<div class="fooditem-cell">Id</div>
+		<div class="fooditem-cell">Name</div>
+		<div class="fooditem-cell">Units</div>
+		<div class="fooditem-cell">Energy</div>
+		<div class="fooditem-cell">Protein</div>
+		<div class="fooditem-cell">Carbs</div>
+		<div class="fooditem-cell">Sugars</div>
+		<div class="fooditem-cell">Fats</div>
+		<div class="fooditem-cell">Saturates</div>
+		<div class="fooditem-cell">Sodium</div>
+		<div class="fooditem-cell">Fibre</div>
+	</div>
+	<div  *ngFor="let foodItem of foodItems" class="fooditem-row">
+		<div class="fooditem-cell">{{foodItem.id}}</div>
+		<div class="fooditem-cell">{{foodItem.name}}</div>
+		<div class="fooditem-cell">{{foodItem.units}}</div>
+		<div class="fooditem-cell">{{foodItem.energy}}</div>
+		<div class="fooditem-cell">{{foodItem.protein}}</div>
+		<div class="fooditem-cell">{{foodItem.carbs}}</div>
+		<div class="fooditem-cell">{{foodItem.sugars}}</div>
+		<div class="fooditem-cell">{{foodItem.fats}}</div>
+		<div class="fooditem-cell">{{foodItem.saturates}}</div>
+		<div class="fooditem-cell">{{foodItem.sodium}}</div>
+		<div class="fooditem-cell">{{foodItem.fibre}}</div>
+		<div class="fooditem-cell2">
+		<button type="button" (click)="onSelect(foodItem)">Select</button></div>
+	</div>
+	<app-fooditem-detail [foodItem]='selectedFoodItem'></app-fooditem-detail>
+</div>
